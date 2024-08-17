@@ -1,0 +1,28 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_di_353_953)">
+<rect x="30" y="30" width="40" height="40" rx="20" fill="url(#paint0_radial_353_953)" fill-opacity="0.05" shape-rendering="crispEdges"/>
+<path d="M59.1668 42.5001C58.3688 43.063 57.4853 43.4935 56.5502 43.7751C56.0483 43.198 55.3813 42.789 54.6394 42.6034C53.8974 42.4177 53.1164 42.4644 52.4019 42.7371C51.6874 43.0098 51.0739 43.4954 50.6443 44.1282C50.2148 44.7609 49.9899 45.5104 50.0002 46.2751V47.1084C48.5357 47.1464 47.0846 46.8216 45.776 46.163C44.4674 45.5043 43.3421 44.5323 42.5002 43.3334C42.5002 43.3334 39.1668 50.8334 46.6668 54.1667C44.9506 55.3317 42.9061 55.9159 40.8335 55.8334C48.3335 60.0001 57.5002 55.8334 57.5002 46.2501C57.4994 46.018 57.4771 45.7864 57.4335 45.5584C58.284 44.7197 58.8842 43.6607 59.1668 42.5001Z" stroke="#00D0FF" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<filter id="filter0_di_353_953" x="0" y="0" width="100" height="100" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="15"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.815686 0 0 0 0 1 0 0 0 0.2 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_353_953"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_353_953" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="2.5"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.815686 0 0 0 0 1 0 0 0 1 0"/>
+<feBlend mode="normal" in2="shape" result="effect2_innerShadow_353_953"/>
+</filter>
+<radialGradient id="paint0_radial_353_953" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(50 50) rotate(90) scale(20)">
+<stop stop-color="white" stop-opacity="0.01"/>
+<stop offset="1" stop-color="white"/>
+</radialGradient>
+</defs>
+</svg>

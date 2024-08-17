@@ -1,0 +1,157 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-medium);
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--background);
+  color: var(--primaryText);
+  transition: all 0.3s linear;
+}
+.mx {
+  max-width: 1800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+span {
+  color: #00d0ff;
+  text-shadow: 0px 0px 64px rgba(0, 208, 255, 0.5);
+  font-family: var(--font-semibold);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primaryText);
+  font-size: 20px;
+}
+button:disabled {
+  cursor: no-drop;
+}
+
+:root {
+  --background: #0a0a0a;
+  --headerBackground: rgba(0, 0, 0, 0.5);
+  --primaryText: #fff;
+  --secondaryText: #777;
+  --font-medium: "Gilroy-Medium";
+  --font-bold: "Gilroy-Bold";
+  --font-semibold: "Gilroy-SemiBold";
+  --font-light: "Gilroy-Light";
+  --font-regular: "Gilroy-Regular";
+  --font-Exima: "Exima-Geometric";
+}
+
+.drop-down-icon.rotate {
+  transform: rotate(-180deg);
+  transition: all 0.5s ease-out;
+}
+
+.errorMsg {
+  color: #f54444;
+  font-size: 14px;
+  margin-top: 8px;
+  font-family: var(--font-medium);
+  @media (max-width: 567px) {
+    font-size: 12px;
+  }
+}
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("../src/assets/fonts/Gilroy-Bold.ttf");
+}
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("../src/assets/fonts/Gilroy-Medium.ttf");
+}
+@font-face {
+  font-family: "Gilroy-SemiBold";
+  src: url("../src/assets/fonts/Gilroy-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url("../src/assets/fonts/Gilroy-Light.ttf");
+}
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("../src/assets/fonts/Gilroy-Regular.ttf");
+}
+@font-face {
+  font-family: "Exima-Geometric";
+  src: url("../src/assets/fonts/Exima\ Geometric.ttf");
+}
+
+h1 {
+  font-size: 40px;
+  color: var(--primaryText);
+  font-family: var(--font-Exima);
+  font-weight: 400;
+  @media (max-width: 1024px) {
+    font-size: 32px;
+  }
+  @media (max-width: 500px) {
+    font-size: 24px;
+  }
+  @media (max-width: 425px) {
+    font-size: 20px;
+  }
+}
+h2 {
+  font-size: 32px;
+  color: var(--primaryText);
+  font-family: var(--font-semibold);
+  @media (max-width: 500px) {
+    font-size: 20px;
+  }
+}
+h3 {
+  font-size: 20px;
+  color: var(--primaryText);
+  font-family: var(--font-light);
+  @media (max-width: 500px) {
+    font-size: 14px;
+  }
+}
+h4 {
+  font-size: 14px;
+  color: var(--secondaryText);
+  font-family: var(--font-medium);
+  @media (max-width: 500px) {
+    font-size: 12px;
+  }
+}
+
+p {
+  font-size: 16px;
+  color: var(--secondaryText);
+  font-family: var(--font-medium);
+  @media (max-width: 500px) {
+    font-size: 12px;
+  }
+}
+
+.expanded {
+  overflow-y: scroll;
+  height: 480px;
+}
+
+.rotated {
+  img {
+    transform: rotate(-180deg);
+  }
+}
+
+.activeColor {
+  color: #fff;
+}
+
+.whiteText {
+  color: #fff;
+}

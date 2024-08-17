@@ -1,0 +1,261 @@
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  padding: 0 48px;
+  transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  overflow: hidden;
+  @media (max-width: 547px) {
+    padding: 0 16px;
+  }
+  .modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+  }
+  .modal-container {
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+
+    .contact-us {
+      padding: 15px 64px 32px 64px;
+      position: relative;
+      margin: 0 auto;
+      box-sizing: border-box;
+      border-radius: 10px;
+      background: #1c1c1c;
+      backdrop-filter: blur(20px);
+      max-width: 1000px;
+      width: 100%;
+      max-height: 0px;
+      height: 100%;
+      transition: max-height 200ms linear;
+
+      &.active {
+        max-height: 500px;
+
+        .contact-us-container {
+          visibility: visible;
+        }
+      }
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100px;
+        background-repeat: no-repeat;
+        z-index: 1000;
+        @media (max-width: 567px) {
+          height: 45px;
+        }
+      }
+      &::before {
+        background-image: url("../../assets/images/Union-top.png");
+        width: 100%;
+        top: -58px;
+        left: 0;
+        right: 0;
+        background-size: contain;
+        @media (max-width: 918px) {
+          top: -45px;
+        }
+        @media (max-width: 762px) {
+          top: -40px;
+        }
+        @media (max-width: 654px) {
+          top: -30px;
+        }
+        @media (max-width: 432px) {
+          top: -20px;
+        }
+      }
+
+      &::after {
+        background-image: url("../../assets/images/Union-bottom.png");
+        bottom: -90px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-size: contain;
+        @media (max-width: 567px) {
+          bottom: -38px;
+        }
+      }
+
+      .close-icon {
+        display: flex;
+        cursor: pointer;
+        padding: 8px;
+        justify-content: flex-end;
+        // margin: 12px;
+        margin-top: 12px;
+        margin-right: -10px;
+      }
+      @media (max-width: 768px) {
+        padding: 18px;
+      }
+
+      .contact-us-container {
+        overflow-y: auto;
+        overflow-x: hidden;
+        visibility: hidden;
+        height: 100%;
+        &::-webkit-scrollbar {
+          width: 0px;
+        }
+        @media (max-width: 547px) {
+          height: 440px;
+        }
+        .close-icon {
+          @media (max-width: 547px) {
+            margin-right: -8px;
+            margin-top: -4px;
+            margin-bottom: 12px;
+          }
+          svg {
+            @media (max-width: 547px) {
+              width: 25px;
+              height: 25px;
+            }
+          }
+        }
+        .contact-us-content {
+          input {
+            background: transparent;
+            padding: 16px 24px;
+            border: 1px solid #252525;
+            width: 100%;
+            font-size: 16px;
+            color: var(--primaryText);
+            outline: none;
+            font-family: var(--font-medium);
+            @media (max-width: 567px) {
+              font-size: 12px;
+              outline: none;
+            }
+          }
+
+          .grid-item {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            padding-top: 12px;
+            @media (max-width: 547px) {
+              grid-template-columns: 1fr;
+              padding-top: 0px;
+              gap: 12px;
+            }
+          }
+          .drop-down-wrapper {
+            position: relative;
+            padding: 32px 0;
+            @media (max-width: 547px) {
+              padding: 12px 0;
+            }
+
+            .flex-item {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              cursor: pointer;
+              padding: 16px 24px;
+              border: 1px solid #252525;
+              svg {
+                @media (max-width: 567px) {
+                  width: 16px;
+                }
+              }
+              p {
+                @media (max-width: 567px) {
+                  font-size: 12px;
+                }
+              }
+            }
+            .select-drop-down {
+              background: #252525;
+              box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+              border-radius: 5px;
+              transition: all 0.5s ease-out;
+              margin-top: 8px;
+              @media (max-width: 567px) {
+                padding: 12px 0px;
+              }
+
+              p {
+                font-size: 20px;
+                font-family: var(--font-medium);
+                color: #444444;
+                padding: 14px 16px;
+                cursor: pointer;
+                transition: all 0.5s ease-out;
+                &:hover {
+                  color: var(--primaryText);
+                }
+                @media (max-width: 567px) {
+                  font-size: 12px;
+                  padding: 6px 16px;
+                }
+              }
+            }
+          }
+          .textarea-input {
+            textarea {
+              font-family: "Gilroy-Medium";
+              background-color: transparent;
+              border: 1px solid #252525;
+              width: 100%;
+              padding: 16px 24px;
+              color: #fff;
+              font-size: 16px;
+              outline: none;
+              @media (max-width: 567px) {
+                font-size: 12px;
+              }
+            }
+          }
+          .submit-btn {
+            border: 1px solid #fff;
+            box-shadow: 0px 0px 10px 0px #00d0ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 96%;
+            padding: 16px 24px;
+            margin: 40px 10px;
+            cursor: pointer;
+            @media (max-width: 547px) {
+              margin-bottom: 32px;
+              margin-top: 28px;
+            }
+            button {
+              color: #fff;
+              font-size: 16px;
+              background: transparent;
+              outline: none;
+              border: none;
+              cursor: pointer;
+              @media (max-width: 567px) {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
